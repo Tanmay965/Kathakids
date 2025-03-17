@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Katha Kids Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Varela+Round:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Header (Do not change) -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-circle">
+                        <img src="images/logo.png" alt="Kids Library Logo">
+                    </div>
+                    <div class="logo-text">Katha Kids Library</div>
+                </div>
+                <div class="nav-links">
+                    <a href="home.html">Home</a>
+                    <a href="plans.html">Plans</a>
+                    <a href="books.html">Books</a>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Us Form -->
+   
+
+    <section class="contact-section">
+        <div class="background">
+            <div class="sun"></div>
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="cloud cloud4"></div>
+            <div class="cloud cloud5"></div>
+        </div>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Have any issues or questions? Let us know!</p>             
+            <form action="https://formspree.io/f/mjkykkov" method="post">
+                <label for="name">Your Name <span>*</span></label>
+                <input type="text" id="name" name="Name" placeholder="Full Name" required>
+            
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" name="Email" placeholder="Your Email" required>
+            
+                <label for="issue">Issue <span>*</span></label>
+                <textarea id="issue" name="Issue" placeholder="Describe your issue..." required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+
+</body>
+</html>

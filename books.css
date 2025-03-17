@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #ffe3e3;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    padding: 0 80px;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-square {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: #091057;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.nav-links a {
+    color: #091057;
+    text-decoration: none; /* Removed underline */
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Body Adjustment to Fix Heading Overlap */
+body {
+    padding-top: 100px; /* Ensures content starts below the fixed header */
+    background-color: #04102E; /* Dark Universe Theme */
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(33, 176, 254, 0.5) 10%, transparent 40%),
+        radial-gradient(circle at 70% 60%, rgba(255, 0, 110, 0.5) 10%, transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(20, 39, 71, 0.5) 10%, transparent 40%),
+        url('https://www.transparenttextures.com/patterns/stardust.png'); /* Subtle stars effect */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Featured Books Section */
+.featured-books {
+    background-color: transparent;
+    padding: 40px 20px;
+}
+
+/* Heading Changes */
+.featured-books h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1.2px;
+}
+
+/* Books Grid */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Cards in a Row */
+    gap: 15px; /* Balanced Spacing */
+    padding: 0 150px; /* Adds space on both sides */
+}
+
+/* Book Card */
+.book-card {
+    transform: scale(0.95); /* Optimal Card Size */
+    background-color: #FFEB3B;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 3px solid #FF006E;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+/* Book Cover */
+.book-cover img {
+    width: 100%;
+    height: 350px; /* Balanced Height */
+    object-fit: cover;
+    border-bottom: 4px solid #FF006E;
+}
+
+/* Book Info */
+.book-info {
+    padding: 20px;
+}
+
+.book-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #37474F;
+    text-align: center;
+    background-color: #FF006E;
+    color: #fff;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.book-info p {
+    color: #37474F;
+    text-align: center;
+    font-size: 14px;
+}
+

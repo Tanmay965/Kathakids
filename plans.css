@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #ffe3e3;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    padding: 0 80px;
+}
+
+nav {
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-square {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: #091057;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.nav-links a {
+    color: #091057;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Body */
+body {
+    background:  #0fdd91; 
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Membership Container */
+.membership-container {
+    background-color: #fff;
+    border: 5px solid #21B0FE;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive;
+    color: #FF006E;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #21B0FE;
+}
+
+th {
+    background-color: #FF006E;
+    color: #FFF;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+tr:nth-child(even) {
+    background-color: #FED700;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFFDE2;
+}
+
+.highlight {
+    background-color: #21B0FE;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* Jungle Trees */
+.tree {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    background: #2A5934;
+    border-radius: 0 50% 50% 50%;
+    box-shadow: 0 0 15px #1B5E20;
+}
+
+.tree-left {
+    top: 547px;
+    left: 40px;
+}
+
+.tree-right {
+    top: 526px;
+    right: 35px;
+    width: 130px;
+    height: 160px;
+}
+
+.tree-middle {
+    top: 593px;
+    left: 30%;
+    width: 55px;
+    height: 95px;
+}
+
+.tree-extra1 {
+    top: 547px;
+    right: 220px;
+    width: 100px;
+    height: 140px;
+}
+
+.tree-extra2 {
+    top: 512px;
+    left: 120px;
+    width: 160px;
+    height: 175px;
+}
+
+.tree:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #8B4513;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* Animal */
+.animal {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: url('images/lion.png') no-repeat center/contain;
+    bottom: 40px;
+    right: 40px;
+}
