@@ -92,7 +92,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 8-vh;
     position: relative;
     overflow: hidden;
 }
@@ -219,7 +219,7 @@ nav {
 .contact-container h2 {
     font-family: 'Bubblegum Sans', cursive;
     color: #FF006E;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     font-size: 28px;
 }
 
@@ -228,14 +228,14 @@ nav {
     font-family: 'Varela Round', sans-serif;
     color: #555;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Form Styling */
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
 }
 
 label {
