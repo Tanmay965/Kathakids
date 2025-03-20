@@ -22,7 +22,7 @@ nav {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -94,7 +94,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 1000px;
-    margin-top: 180px;
+    margin-top: 120px;
     margin-bottom: 30px;
 }
 
@@ -108,6 +108,7 @@ h1 {
 
 /* Table Styling */
 table {
+    top: 3%;
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
@@ -150,33 +151,33 @@ tr:nth-child(odd) {
 }
 
 .tree-left {
-    top: 547px;
+    bottom: 0%;
     left: 40px;
 }
 
 .tree-right {
-    top: 526px;
+    bottom: 0%;
     right: 35px;
     width: 130px;
     height: 160px;
 }
 
 .tree-middle {
-    top: 593px;
+    bottom: 0%;
     left: 30%;
     width: 55px;
     height: 95px;
 }
 
 .tree-extra1 {
-    top: 547px;
+    bottom: 0%;
     right: 220px;
     width: 100px;
     height: 140px;
 }
 
 .tree-extra2 {
-    top: 512px;
+    bottom: 0%;
     left: 120px;
     width: 160px;
     height: 175px;
