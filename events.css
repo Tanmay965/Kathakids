@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 * {
     margin: 0;
@@ -49,7 +50,7 @@ nav {
 
 .logo-text {
     font-size: 40px;
-    font-family: 'Bubblegum Sans', cursive;
+    font-family:"Modak", system-ui;
     color: #091057;
 }
 
@@ -278,7 +279,7 @@ body {
 
 .logo-text {
     font-size: 40px;
-    font-family: 'Bubblegum Sans', cursive;
+    font-family: "Modak", system-ui;
     color: #091057;
 }
 
