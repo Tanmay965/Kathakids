@@ -677,8 +677,8 @@ nav {
 .cloud-2 {
     width: 140px;
     height: 80px;
-    top: 105px;
-    left: 90%;
+    top: 115px;
+    left: 80%;
 }
 
 .cloud-3 {
@@ -702,8 +702,8 @@ nav {
 
 .sun {
     position: absolute;
-    top: 90px;
-    right: 5%;
+    top: 93px;
+    right: 14%;
     width: 80px;
     height: 80px;
     background-color: #FFD700; /* Bright Yellow Sun */
