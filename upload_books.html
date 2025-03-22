@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: 90%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        .book-list {
+            margin-top: 20px;
+        }
+        .book-card {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .book-card img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Upload a New Book</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="book_name" placeholder="Enter Book Name" required><br>
+        <input type="file" name="book_image" required><br>
+        <button type="submit">Upload Book</button>
+    </form>
+</div>
+
+<div class="book-list">
+    <h2>Book Library</h2>
+    <?php include 'display_books.php'; ?>
+</div>
+
+</body>
+</html>
